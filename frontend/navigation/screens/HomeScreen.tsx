@@ -1,22 +1,26 @@
 import * as React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function HomeScreen({navigation}){
-    return(
+export default function HomeScreen({ navigation }) {
+    return (
         <View style={styles.container}>
-            <Text>Home</Text>
+            <View style={styles.header}>
+                <Text style={styles.headerText}>Hello</Text>
+            </View>
         </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({
-    container : {
-        flex : 1,
-        justifyContent : 'center',
-        alignItems : 'center'
+    container: {
+        flex: 1, // Takes up the full height of the screen
+        justifyContent: 'flex-start', // Ensures children are aligned at the top
     },
-    heading : {
-        fontSize : 26,
-        fontWeight : 'bold'
-    }
-})
+    header: {
+        backgroundColor: 'black',
+        padding: 16, // Adds some padding inside the header
+    },
+    headerText: {
+        color: 'white', // Ensures the text color contrasts with the background
+    },
+});
