@@ -5,7 +5,7 @@ import { colors, fonts } from '../../assets/theme'; // Import the theme
 export default function SavedScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Saved</Text>
+      <Text style={styles.heading}>Save</Text>
     </View>
   );
 }
